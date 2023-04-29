@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="bc6e6fff-580d-4669-ab24-3185a1221112" ChangeDateTime="04/29/2023 08:28:27">
+    <Property Name="ElementName" Value="[dbo].[Addres].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Addres]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Adresse_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="70cc489e-7f06-4e61-8c69-ce31bdcadfc1" ChangeDateTime="04/29/2023 08:32:52">
+    <Property Name="ElementName" Value="[dbo].[Ashtray].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Ashtray]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Ashtray_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="71f97935-1bad-48b4-a0d1-ead7f895b37f" ChangeDateTime="04/29/2023 08:45:38">
+    <Property Name="ElementName" Value="[dbo].[Canisite].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Canisite]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Canisite_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aa6e4b77-fdad-4417-be70-ffe88a950525" ChangeDateTime="04/29/2023 09:00:27">
+    <Property Name="ElementName" Value="[dbo].[GarbageCan].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[GarbageCan]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GarbageCan_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7d1f6164-8ae9-49a4-a444-0da98ce2de3c" ChangeDateTime="04/29/2023 09:07:16">
+    <Property Name="ElementName" Value="[dbo].[PublicToilet].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PublicToilet]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PublicToilet_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8cf8c3ef-b324-4386-971f-7410d06f0abf" ChangeDateTime="04/29/2023 09:17:25">
+    <Property Name="ElementName" Value="[dbo].[Incivility].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Incivility]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Incivility_Id" />
+  </Operation>
+</Operations>
