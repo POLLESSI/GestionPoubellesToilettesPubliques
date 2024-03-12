@@ -56,14 +56,28 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Programability" />
+    <Folder Include="Tables" />
+    <Folder Include="Programability\Functions" />
+    <Folder Include="Programability\Procedures" />
+    <Folder Include="Programability\Procedures\spAuth" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="GarbageCan.sql" />
-    <Build Include="Ashtray.sql" />
-    <Build Include="PublicToilet.sql" />
-    <Build Include="Canisite.sql" />
-    <Build Include="Incivility.sql" />
-    <Build Include="Addres.sql" />
+    <Build Include="Tables\Addres.sql" />
+    <Build Include="Tables\Ashtray.sql" />
+    <Build Include="Tables\Canisite.sql" />
+    <Build Include="Tables\Chat.sql" />
+    <Build Include="Tables\GarbageCan.sql" />
+    <Build Include="Tables\Incivility.sql" />
+    <Build Include="Tables\NUser.sql" />
+    <Build Include="Tables\Person.sql" />
+    <Build Include="Tables\PublicToilet.sql" />
+    <Build Include="Tables\SaveStreet.sql" />
+    <Build Include="Programability\Functions\fHasher.sql" />
+    <Build Include="Programability\Procedures\spAuth\sqlNUserLogin.sql" />
+    <Build Include="Programability\Procedures\spAuth\sqlNUserRegister.sql" />
+    <Build Include="Tables\CrimeIndexCalculator.sql" />
+    <Build Include="MakeshiftSchelter.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PoubellesCendriersToilettesDb.refactorlog" />

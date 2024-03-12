@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionPoubellesToilettesPubliques", "GestionPoubellesToilettesPubliques\GestionPoubellesToilettesPubliques.csproj", "{5DD796AC-5413-454B-8721-2E08D0615DBC}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 DataBase", "00 DataBase", "{6ED899E0-EACE-43CF-9F4C-E03145776FFD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Dal", "01 Dal", "{E59AAAC0-BC7C-4D1B-A181-90CDBC637724}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 BLL", "01 BLL", "{E59AAAC0-BC7C-4D1B-A181-90CDBC637724}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Api", "02 Api", "{6CB95C2C-9D79-4495-9F72-DA96697422B4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 DAL", "02 DAL", "{6CB95C2C-9D79-4495-9F72-DA96697422B4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Ui", "03 Ui", "{F1D22C57-F5AC-4EE7-9BFD-BBF5D94E5F10}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 API", "03 API", "{F1D22C57-F5AC-4EE7-9BFD-BBF5D94E5F10}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Tools", "99 Tools", "{B277CBA9-E380-4F61-A0CC-68B14496D89B}"
 EndProject
@@ -19,16 +17,18 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PoubellesCendriersToilettes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoubellesCendriersToilettes.Tools", "PoubellesCendriersToilettes.Tools\PoubellesCendriersToilettes.Tools.csproj", "{A24A53D1-9D30-4D6A-9217-A6F91AA5F939}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionPoubellesToilettresPubliques2.BLL", "GestionPoubellesToilettresPubliques2.BLL\GestionPoubellesToilettresPubliques2.BLL.csproj", "{46E0A93C-23C9-4E5A-B6D6-6019D804424D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionPoubellesToilttesPubliques2.DAL", "GestionPoubellesToilttesPubliques2.DAL\GestionPoubellesToilttesPubliques2.DAL.csproj", "{18645AEA-DD39-4D0D-9B52-AC2528750FBD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionPoubellesToilettesPublique2.API", "GestionPoubellesToilettesPublique2.API\GestionPoubellesToilettesPublique2.API.csproj", "{3F17F33D-1AB6-433D-A400-23DF3DBDEB50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5DD796AC-5413-454B-8721-2E08D0615DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DD796AC-5413-454B-8721-2E08D0615DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DD796AC-5413-454B-8721-2E08D0615DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DD796AC-5413-454B-8721-2E08D0615DBC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D8E07045-9FBD-4EFB-98F5-BE62121623C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D8E07045-9FBD-4EFB-98F5-BE62121623C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8E07045-9FBD-4EFB-98F5-BE62121623C5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
@@ -39,6 +39,18 @@ Global
 		{A24A53D1-9D30-4D6A-9217-A6F91AA5F939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A24A53D1-9D30-4D6A-9217-A6F91AA5F939}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A24A53D1-9D30-4D6A-9217-A6F91AA5F939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E0A93C-23C9-4E5A-B6D6-6019D804424D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E0A93C-23C9-4E5A-B6D6-6019D804424D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E0A93C-23C9-4E5A-B6D6-6019D804424D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E0A93C-23C9-4E5A-B6D6-6019D804424D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18645AEA-DD39-4D0D-9B52-AC2528750FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18645AEA-DD39-4D0D-9B52-AC2528750FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18645AEA-DD39-4D0D-9B52-AC2528750FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18645AEA-DD39-4D0D-9B52-AC2528750FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F17F33D-1AB6-433D-A400-23DF3DBDEB50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F17F33D-1AB6-433D-A400-23DF3DBDEB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F17F33D-1AB6-433D-A400-23DF3DBDEB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F17F33D-1AB6-433D-A400-23DF3DBDEB50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +58,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D8E07045-9FBD-4EFB-98F5-BE62121623C5} = {6ED899E0-EACE-43CF-9F4C-E03145776FFD}
 		{A24A53D1-9D30-4D6A-9217-A6F91AA5F939} = {B277CBA9-E380-4F61-A0CC-68B14496D89B}
+		{46E0A93C-23C9-4E5A-B6D6-6019D804424D} = {E59AAAC0-BC7C-4D1B-A181-90CDBC637724}
+		{18645AEA-DD39-4D0D-9B52-AC2528750FBD} = {6CB95C2C-9D79-4495-9F72-DA96697422B4}
+		{3F17F33D-1AB6-433D-A400-23DF3DBDEB50} = {F1D22C57-F5AC-4EE7-9BFD-BBF5D94E5F10}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60D647E6-037C-4D73-996F-31BC4DFE5605}
