@@ -51,5 +51,14 @@ namespace GestionPoubellesToilettesPublique2.API.Tools
                 SecurityScore = sst.SecutityScore
             };
         }
+        public static MakeshiftShelter MakeshiftSchelterToDal(this MakeshiftShelterRegisterForm mss)
+        {
+            return new MakeshiftShelter
+            {
+                Latitude = mss.Latitude,
+                Longitude = mss.Longitude,
+                Description = mss.Description,
+            };
+        }
     }
 }

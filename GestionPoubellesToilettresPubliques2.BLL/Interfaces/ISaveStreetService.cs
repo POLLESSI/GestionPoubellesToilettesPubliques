@@ -15,6 +15,6 @@ namespace GestionPoubellesToilettresPubliques2.BLL.Interfaces
         IEnumerable<SaveStreet?> GetAll();
         SaveStreet? GetById(int saveStreet_Id);
         SaveStreet? Delete(int saveStreet_Id);
-        SaveStreet?Update(int saveStreet_Id, string streetname, string startLatitude, string endLatitude, string startLongitude, string endLongitude, string securityScore);
+        SaveStreet? Update(int saveStreet_Id, string streetname, string startLatitude, string endLatitude, string startLongitude, string endLongitude, string securityScore);
     }
 }

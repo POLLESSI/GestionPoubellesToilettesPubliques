@@ -8,3 +8,14 @@
 
 	CONSTRAINT PK_MakeshiftSchelter PRIMARY KEY (MakeshiftSchelter_Id)
 )
+
+GO
+
+CREATE TRIGGER [dbo].[OnDeleteMakeshiftSchelter]
+	ON [dbo].[MakeshiftSchelter]
+	INSTEAD OF DELETE
+	AS 
+	BEGIN
+		UPDATE MakeshiftSchelter SET Active = 0
+		WHERE MakeshiftSchelter_Id = (SELECT MakeshiftSchelter_Id FROM deleted)
+	END

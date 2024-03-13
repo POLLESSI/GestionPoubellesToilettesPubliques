@@ -40,6 +40,8 @@ builder.Services.AddScoped<IPersonService, PersonService>();
 builder.Services.AddScoped<IPersonRepository, PersonRepository>();
 builder.Services.AddScoped<ISaveStreetService, SaveStreetService>();
 builder.Services.AddScoped<ISaveStreetRepository, SaveStreetRepository>();
+builder.Services.AddScoped<IMakeshiftSchelterService, MakeshiftSchelterService>();
+builder.Services.AddScoped<IMakeshiftShelterRepository, MakeshiftShelterRepository>();
 
 // SignalR (optionnel)
 builder.Services.AddSignalR();
@@ -47,6 +49,7 @@ builder.Services.AddSingleton<ChatHub>();
 builder.Services.AddSingleton<NUserHub>();
 builder.Services.AddSingleton<PersonHub>();
 builder.Services.AddSingleton<SaveStreetHub>();
+builder.Services.AddSingleton<MakeshiftShelterHub>();
 
 // Token Generator
 
@@ -116,6 +119,7 @@ app.MapHub<ChatHub>("/chathub");
 app.MapHub<NUserHub>("/nuserhub");
 app.MapHub<PersonHub>("/personhub");
 app.MapHub<SaveStreetHub>("/savestreethub");
+app.MapHub<MakeshiftShelterHub>("/makeshiftschelterhub");
 
 // Optionnel (si razor)
 
