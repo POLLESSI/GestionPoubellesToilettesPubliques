@@ -32,8 +32,18 @@ builder.Services.AddScoped<SqlConnection>(Sp => new SqlConnection(builder.Config
 
 // Injections
 
+builder.Services.AddScoped<IAddresService, AddresService>();
+builder.Services.AddScoped<IAddresRepository, AddresRepository>();
+builder.Services.AddScoped<IAshtrayService, AshtrayService>();
+builder.Services.AddScoped<IAshtrayRepository, AshtrayRepository>();
+builder.Services.AddScoped<ICanisiteService, CanisiteService>();
+builder.Services.AddScoped<ICanisiteRepository, CanisiteRepository>();
 builder.Services.AddScoped<IChatService, ChatService>();
 builder.Services.AddScoped<IChatRepository, ChatRepository>();
+builder.Services.AddScoped<IGarbageCanService, GarbageCanService>();
+builder.Services.AddScoped<IGarbageCanRepository, GarbageCanRepository>();
+builder.Services.AddScoped<IIncivilityService, IncivilityService>();
+builder.Services.AddScoped<IIncivilityRepository, IncivilityRepository>();
 builder.Services.AddScoped<INUserService, NUserService>();
 builder.Services.AddScoped<INUserRepository, NUserRepository>();
 builder.Services.AddScoped<IPersonService, PersonService>();
@@ -42,12 +52,20 @@ builder.Services.AddScoped<ISaveStreetService, SaveStreetService>();
 builder.Services.AddScoped<ISaveStreetRepository, SaveStreetRepository>();
 builder.Services.AddScoped<IMakeshiftSchelterService, MakeshiftSchelterService>();
 builder.Services.AddScoped<IMakeshiftShelterRepository, MakeshiftShelterRepository>();
+builder.Services.AddScoped<IPublicToiletService, PublicToiletService>();
+builder.Services.AddScoped<IPublicToiletRepository, PublicToiletteRepository>();
 
 // SignalR (optionnel)
 builder.Services.AddSignalR();
+builder.Services.AddSingleton<AddresHub>();
+builder.Services.AddSingleton<AshtrayHub>();
+builder.Services.AddSingleton<CanisiteHub>();
 builder.Services.AddSingleton<ChatHub>();
+builder.Services.AddSingleton<GarbageCanHub>();
+builder.Services.AddSingleton<IncivilityHub>();
 builder.Services.AddSingleton<NUserHub>();
 builder.Services.AddSingleton<PersonHub>();
+builder.Services.AddSingleton<PublicToiletHub>();
 builder.Services.AddSingleton<SaveStreetHub>();
 builder.Services.AddSingleton<MakeshiftShelterHub>();
 
@@ -115,9 +133,15 @@ app.MapControllers();
 
 // Optionnel
 
+app.MapHub<AddresHub>("/addreshub");
+app.MapHub<AshtrayHub>("/ashtrayhub");
+app.MapHub<CanisiteHub>("/canisite");
 app.MapHub<ChatHub>("/chathub");
+app.MapHub<GarbageCanHub>("/garbagecanhub");
+app.MapHub<IncivilityHub>("/incivility");
 app.MapHub<NUserHub>("/nuserhub");
 app.MapHub<PersonHub>("/personhub");
+app.MapHub<PublicToiletHub>("/publictoilethub");
 app.MapHub<SaveStreetHub>("/savestreethub");
 app.MapHub<MakeshiftShelterHub>("/makeshiftschelterhub");
 

@@ -56,7 +56,7 @@ namespace GestionPoubellesToilettesPublique2.API.Controllers
             return Ok();
         }
         [HttpPost("update")]
-        public IActionResult ReceivesaveStreetUpdate(Dictionary<string, string> newUpdate)
+        public IActionResult ReceiveSaveStreetUpdate(Dictionary<string, string> newUpdate)
         {
             foreach (var item in newUpdate)
             {

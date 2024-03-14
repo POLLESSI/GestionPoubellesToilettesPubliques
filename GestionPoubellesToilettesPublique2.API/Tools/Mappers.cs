@@ -60,5 +60,76 @@ namespace GestionPoubellesToilettesPublique2.API.Tools
                 Description = mss.Description,
             };
         }
+        public static Addres AddresToDal(this AddresRegisterForm arf)
+        {
+            return new Addres
+            {
+                Rue = arf.Rue,
+                Numero = arf.Numero,
+                CP = arf.CP,
+                Ville = arf.Ville,
+                Pays = arf.Pays,
+            };
+        }
+        public static Ashtray AshtrayToDal(this AshtrayRegisterForm achf) 
+        {
+            return new Ashtray
+            {
+                Num_Mat = achf.Num_Mat,
+                PosLat = achf.PosLat,
+                PosLong = achf.PosLong,
+                Addres_Id = achf.Addres_Id,
+                IsFull = achf.IsFull,
+                Degradation = achf.Degradation,
+            };
+        }
+        public static Canisite CanisiteToDal(this CanisiteRegisterForm crf)
+        {
+            return new Canisite
+            {
+                Num_Mat = crf.Num_Mat,
+                PosLat = crf.PosLat,
+                PosLong = crf.PosLong,
+                Addres_Id = crf.Addres_Id,
+                IsFull = crf.IsFull,
+                Degradation = crf.Degradation,
+            };
+        }
+        public static GarbageCan GarbageCanToDal(this GarbageCanRegisterForm gcrf)
+        {
+            return new GarbageCan
+            {
+                Num_Mat = gcrf.Num_Mat,
+                PosLat = gcrf.PosLat,
+                PosLong = gcrf.PosLong,
+                Addres_Id = gcrf.Addres_Id,
+                IsFull = gcrf.IsFull,
+                Degradation = gcrf.Degradation,
+            };
+        }
+        public static Incivility IncivilityToDal(this IncivilityRegisterForm irf)
+        {
+            return new Incivility
+            {
+                Num_Mat = irf.Num_Mat,
+                PosLat = irf.PosLat,
+                PosLong = irf.PosLong,
+                Addres_Id = irf.Addres_Id,
+                Severe = irf.Severe,
+                Absorbed = irf.absorbed,
+            };
+        }
+        public static PublicToilet PublicToiletToDal(this PublicToiletRegisterForm ptrf) 
+        {
+            return new PublicToilet
+            {
+                Num_Mat = ptrf.Num_Mat,
+                PosLat = ptrf.PosLat,
+                PosLong = ptrf.PosLong,
+                Addres_Id = ptrf.Addres_Id,
+                IsFull= ptrf.IsFull,
+                Degradation = ptrf.Degradation,
+            };
+        }
     }
 }
