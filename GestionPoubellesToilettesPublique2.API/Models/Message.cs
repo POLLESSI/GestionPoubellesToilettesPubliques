@@ -15,5 +15,8 @@ namespace GestionPoubellesToilettesPublique2.API.Models
         [MaxLength(64)]
         [DisplayName("Author : ")]
         public string? Author { get; set; }
+        [Required(ErrorMessage = "Event Id is required : ")]
+        [DisplayName("Event Id : ")]
+        public int Evenement_Id { get; set; }
     }
 }

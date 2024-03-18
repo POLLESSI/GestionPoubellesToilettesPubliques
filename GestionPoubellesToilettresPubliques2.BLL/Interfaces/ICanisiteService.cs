@@ -14,7 +14,7 @@ namespace GestionPoubellesToilettresPubliques2.BLL.Interfaces
         void CreateCanisite(Canisite canisite);
         IEnumerable<Canisite?> GetAll();
         Canisite? GetById(int canisite_Id);
-        Canisite? delete(int canisite_Id);
+        Canisite? Delete(int canisite_Id);
         Canisite? Update(int canisite_Id, string num_Mat, string posLat, string posLong, int addres_Id, bool isFull, bool degradation);
     }
 }

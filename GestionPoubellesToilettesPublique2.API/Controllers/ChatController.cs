@@ -25,7 +25,7 @@ namespace GestionPoubellesToilettesPublique2.API.Controllers
         {
             return Ok(_chatRepository.GetAll());
         }
-        [HttpGet("{chat_Id}")]
+        [HttpGet("{chat_id}")]
         public IActionResult GetById(int chat_Id) 
         {
             return Ok(_chatRepository.GetById(chat_Id));

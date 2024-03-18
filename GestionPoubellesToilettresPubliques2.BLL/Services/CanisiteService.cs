@@ -32,6 +32,11 @@ namespace GestionPoubellesToilettresPubliques2.BLL.Services
             throw new NotImplementedException();
         }
 
+        public Canisite? Delete(int canisite_Id)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Canisite?> GetAll()
         {
             throw new NotImplementedException();

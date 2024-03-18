@@ -1,11 +1,13 @@
 ﻿CREATE TABLE [dbo].[Chat]
 (
 	[Chat_Id] INT IDENTITY,
-	[NewMessage] NVARCHAR(32) NULL,
+	[NewMessage] NVARCHAR(64) NULL,
 	[Author] NVARCHAR(32) NOT NULL,
+	[Evenement_Id] INT NULL,
 	[Active] BIT DEFAULT 1
 
-	CONSTRAINT PK_Chat PRIMARY KEY ([Chat_Id])
+	CONSTRAINT [PK_Chat] PRIMARY KEY ([Chat_Id])
+	CONSTRAINT [FK_Chat_Evenement] FOREIGN KEY (Evenement_Id) REFERENCES [Evenement] ([Evenement_Id])
 )
 
 GO

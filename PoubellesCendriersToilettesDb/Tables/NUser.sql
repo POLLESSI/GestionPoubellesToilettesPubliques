@@ -8,9 +8,9 @@
 	[Role_Id] INT NOT NULL DEFAULT 3,
 	[Active] BIT DEFAULT 1
 
-	CONSTRAINT [CK_User_Email] CHECK (Email like '__%@__%_%'),
-	CONSTRAINT [PK_User] PRIMARY KEY ([NUser_Id]),
-	CONSTRAINT [FK_User_Person] FOREIGN KEY (Person_Id) REFERENCES [Person] ([Person_Id])
+	CONSTRAINT [CK_NUser_Email] CHECK (Email like '__%@__%_%'),
+	CONSTRAINT [PK_NUser] PRIMARY KEY ([NUser_Id]),
+	CONSTRAINT [FK_NUser_Person] FOREIGN KEY (Person_Id) REFERENCES [Person] ([Person_Id])
 )
 
 GO

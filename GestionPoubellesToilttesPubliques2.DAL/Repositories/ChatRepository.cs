@@ -23,11 +23,12 @@ namespace GestionPoubellesToilttesPubliques2.DAL.Repositories
         {
             try
             {
-                string sql = "INSERT INTO Chat (NewMessage, Author) VALUES " +
-                    "(@NewMessage, @Author)";
+                string sql = "INSERT INTO Chat (NewMessage, Author, Evenement_Id) VALUES " +
+                    "(@NewMessage, @Author, @Evenement_Id)";
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@NewMessage", chat.NewMessage);
                 parameters.Add("@Author", chat.Author);
+                parameters.Add("@Evenement_Id", chat.Evenement_Id);
                 return _connection.Execute(sql, parameters) > 0;
             }
             catch (Exception ex)
@@ -42,11 +43,12 @@ namespace GestionPoubellesToilttesPubliques2.DAL.Repositories
         {
             try
             {
-                string sql = "INSERT INTO Chat (NewMessage, Author) " +
-                    "VALUES (@newMessage, @author)";
+                string sql = "INSERT INTO Chat (NewMessage, Author, Evenement_Id) " +
+                    "VALUES (@newMessage, @author, @evenement_Id)";
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@newMessage", chat.NewMessage);
-                parameters.Add("author", chat.Author);
+                parameters.Add("@author", chat.Author);
+                parameters.Add("@positif", chat.Evenement_Id);
                 _connection.Execute(sql, parameters);
             }
             catch (Exception ex)

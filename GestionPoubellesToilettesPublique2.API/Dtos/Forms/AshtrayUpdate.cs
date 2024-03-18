@@ -29,5 +29,6 @@ namespace GestionPoubellesToilettesPublique2.API.Dtos.Forms
         public bool IsFull { get; set; }
         [Required]
         [DisplayName("Dégradation : ")]
+        public bool Degradation { get; set; }
     }
 }

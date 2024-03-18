@@ -77,6 +77,19 @@
     <Build Include="Programability\Procedures\spAuth\sqlNUserLogin.sql" />
     <Build Include="Programability\Procedures\spAuth\sqlNUserRegister.sql" />
     <Build Include="Tables\MakeshiftSchelter.sql" />
+    <Build Include="Tables\Map.sql" />
+    <Build Include="Tables\Recompense.sql" />
+    <Build Include="Tables\SiteInterest.sql" />
+    <Build Include="Tables\Monument.sql" />
+    <Build Include="Tables\Commerce.sql" />
+    <Build Include="Tables\City.sql" />
+    <Build Include="Tables\Avatar.sql" />
+    <Build Include="Tables\Bonus.sql" />
+    <Build Include="Tables\Icon.sql" />
+    <Build Include="Tables\Evenement.sql" />
+    <Build Include="Tables\Organisateur.sql" />
+    <Build Include="Tables\MediaItem.sql" />
+    <Build Include="Tables\Activity.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PoubellesCendriersToilettesDb.refactorlog" />

@@ -22,12 +22,12 @@ namespace GestionPoubellesToilettesPublique2.API.Controllers
             _ashtrayHub = ashtrayHub;
         }
         [HttpGet]
-        public ActionResult GetAll() 
+        public IActionResult GetAll() 
         {
             return Ok(_ashtrayRepository.GetAll());
         }
         [HttpGet("{ashtray_id}")]
-        public ActionResult GetById(int ashtray_Id)
+        public IActionResult GetById(int ashtray_Id)
         {
             return Ok(_ashtrayRepository.GetById(ashtray_Id));
         }
@@ -50,7 +50,7 @@ namespace GestionPoubellesToilettesPublique2.API.Controllers
         {
             _ashtrayRepository.Delete(ashtray_Id);
             return Ok();
-        }
+        }       
         [HttpPut("update")]
         public IActionResult Update(int ashtray_Id, string num_Mat, string posLat, string posLong, int addres_Id, bool isFull, bool degradation)
         {

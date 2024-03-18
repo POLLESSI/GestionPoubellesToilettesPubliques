@@ -19,5 +19,5 @@ CREATE TRIGGER [dbo].[OnDeleteAddres]
     AS
     BEGIN
         UPDATE Addres SET Active = 0
-        WHERE Adresse_Id = (SELECT Adresse_Id FROM deleted)
+        WHERE Addres_Id = (SELECT Addres_Id FROM deleted)
     END

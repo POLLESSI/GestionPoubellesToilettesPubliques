@@ -12,6 +12,7 @@ namespace GestionPoubellesToilettesPublique2.API.Tools
             {
                 NewMessage = ch.NewMessage,
                 Author = ch.Author,
+                Evenement_Id = ch.Evenement_Id,
             };
         }
         public static Person PersonToDal(this PersonForm np)
@@ -29,7 +30,15 @@ namespace GestionPoubellesToilettesPublique2.API.Tools
                 Telephone = np.Telephone,
                 Gsm = np.Gsm,
             };
-        } 
+        }
+        public static Map MapToDal(this MapRegisterForm mrf)
+        {
+            return new Map
+            {
+                DateCreation = mrf.DateCreation,
+                Description = mrf.Description,
+            };
+        }
         public static NUser NUserToDal(this NUserForm nu)
         {
             return new NUser
@@ -83,6 +92,15 @@ namespace GestionPoubellesToilettesPublique2.API.Tools
                 Degradation = achf.Degradation,
             };
         }
+        public static Bonus BonusToDal(this BonusRegisterForm brf)
+        {
+            return new Bonus
+            {
+                BonusType = brf.BonusType,
+                BonusDescription = brf.BonusDescription,
+                Application = brf.Application,
+            };
+        }
         public static Canisite CanisiteToDal(this CanisiteRegisterForm crf)
         {
             return new Canisite
@@ -93,6 +111,17 @@ namespace GestionPoubellesToilettesPublique2.API.Tools
                 Addres_Id = crf.Addres_Id,
                 IsFull = crf.IsFull,
                 Degradation = crf.Degradation,
+            };
+        }
+        public static Evenement EvenementToDal(this EvenementRegisterForm erf)
+        {
+            return new Evenement
+            {
+                EvenementName = erf.EvenementName,
+                EvenementDescription = erf.EvenementDecription,
+                PosLat = erf.PosLat,
+                PosLong = erf.PosLong,
+                positif = erf.Positif,
             };
         }
         public static GarbageCan GarbageCanToDal(this GarbageCanRegisterForm gcrf)
@@ -119,6 +148,16 @@ namespace GestionPoubellesToilettesPublique2.API.Tools
                 Absorbed = irf.absorbed,
             };
         }
+        public static Monument MonumentToDal(this MonumentRegisterForm mrf)
+        {
+            return new Monument
+            {
+                MonumentName = mrf.MonumentName,
+                PosLat = mrf.PosLat,
+                PosLong = mrf.PosLong,
+                Description = mrf.Description,
+            };
+        }
         public static PublicToilet PublicToiletToDal(this PublicToiletRegisterForm ptrf) 
         {
             return new PublicToilet
@@ -129,6 +168,26 @@ namespace GestionPoubellesToilettesPublique2.API.Tools
                 Addres_Id = ptrf.Addres_Id,
                 IsFull= ptrf.IsFull,
                 Degradation = ptrf.Degradation,
+            };
+        } 
+        public static Recompense RecompenseToDal(this RecompenseRegisterForm rrf) 
+        {
+            return new Recompense
+            {
+                Definition = rrf.Definition,
+                Point = rrf.Point,
+                Implication = rrf.Implacation
+            };
+        }
+        public static SiteInterest SiteInterestToDal(this SiteInterestRegisterForm sirf)
+        {
+            return new SiteInterest
+            {
+                SiteInterestName = sirf.SiteInterestName,
+                SiteInterestType = sirf.SiteInterestType,
+                PosLat = sirf.PosLat,
+                PosLong = sirf.PosLong,
+                Description = sirf.Description,
             };
         }
     }
